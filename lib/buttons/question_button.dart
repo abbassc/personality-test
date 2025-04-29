@@ -36,7 +36,7 @@ class QuestionButton extends StatelessWidget{
 
             //...currentQuestion.getShuffledAnswers().map(),
 
-            /*...shuffledAnswers.map((answerOption) {
+            ...shuffledAnswers.map((answerOption) {
             return AnswerButton(
               shuffledAnswers: shuffledAnswers,
               answer: answer,
@@ -44,8 +44,9 @@ class QuestionButton extends StatelessWidget{
               questionNumber: questionNumber, 
               answerNumber: shuffledAnswers.indexOf(answerOption),
             );
-          }).toList(),*/
+          }).toList(),
 
+            /*
             AnswerButton(shuffledAnswers: shuffledAnswers,questionNumber: questionNumber, answerNumber: 0, answer: answer, category: questions[questionNumber].answers[0].category,),
             //SizedBox(height: 5,),
             AnswerButton(shuffledAnswers: shuffledAnswers,questionNumber: questionNumber, answerNumber: 1, answer: answer, category: questions[questionNumber].answers[1].category,),
@@ -53,6 +54,7 @@ class QuestionButton extends StatelessWidget{
             AnswerButton(shuffledAnswers: shuffledAnswers,questionNumber: questionNumber, answerNumber: 2, answer: answer, category: questions[questionNumber].answers[2].category,),
             //SizedBox(height: 5,),
             AnswerButton(shuffledAnswers: shuffledAnswers,questionNumber: questionNumber, answerNumber: 3, answer: answer, category: questions[questionNumber].answers[3].category,),
+            */
 
             /*ElevatedButton(onPressed: (){}, style:
               ElevatedButton.styleFrom(
