@@ -8,8 +8,9 @@ class QuestionButton extends StatelessWidget{
 
   final int questionNumber;
   final void Function(Category) answer;
+  //final void Function(Answers selectedAnswer) updateScore;
 
-  const QuestionButton({required this.questionNumber, required this.answer, super.key});
+  const QuestionButton({required this.questionNumber, required this.answer, super.key, });
 
   
   @override

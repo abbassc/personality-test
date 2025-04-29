@@ -7,9 +7,10 @@ import 'package:personality_test/models/question.dart';
 class QuestionsScreen extends StatelessWidget{
 
   final void Function(Category) answer;
+  //final void Function(Answers selectedAnswer) updateScore;
   final int questionNumber;
 
-  const QuestionsScreen({super.key, required this.answer, required this.questionNumber});
+  const QuestionsScreen({super.key, required this.answer, required this.questionNumber, });
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,8 @@ class QuestionsScreen extends StatelessWidget{
     List<Answers> shuffledAnswers = currentQuestion.getShuffledAnswers();
 
     return Center(
-      child: QuestionButton(questionNumber: questionNumber, answer: answer),
-    );
+      child: QuestionButton(questionNumber: questionNumber, 
+      answer: answer,
+      ));
   }
 }

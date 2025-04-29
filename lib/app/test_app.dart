@@ -35,7 +35,7 @@ class _TestAppState extends State<TestApp>{
       });
     }
 
-    /*void updateScore(){
+    void updateScore(Answers selectedAnswer){
       if(selectedAnswer.category == Category.Thinker){
           score[Category.Thinker] = score[Category.Thinker]! + 1;
         }
@@ -48,7 +48,7 @@ class _TestAppState extends State<TestApp>{
         else if(selectedAnswer.category == Category.Planner){
           score[Category.Planner] = score[Category.Planner]! + 1;
         }
-    }*/
+    }
 
     void answer(Category category){
       //Answers selectedAnswer;
@@ -93,7 +93,7 @@ class _TestAppState extends State<TestApp>{
   Widget build( BuildContext context) {
     Widget activeScreen = StartScreen(startQuiz);
     if (activeScreenName == 'quiz-screen') {
-      activeScreen = QuestionsScreen(questionNumber: questionNumber, answer: answer);
+      activeScreen = QuestionsScreen(questionNumber: questionNumber, answer: answer, /*updateScore: (Answers selectedAnswer) { updateScore(selectedAnswer); },*/);
     }
     
     if (activeScreenName == 'result-screen') {

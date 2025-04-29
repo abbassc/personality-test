@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:personality_test/models/answers.dart';
 
 class Question {
